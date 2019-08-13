@@ -2,7 +2,8 @@ import requests
 import time
 import sys
 
-url = "http://192.168.143.117/LED={code}"
+#url = "http://192.168.143.117/LED={code}"
+url = "http://192.168.8.110/LED={code}"
 code = "... --- ... "
 
 def on_for(t):
