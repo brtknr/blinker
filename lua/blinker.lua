@@ -34,8 +34,8 @@ init()
   
     function controlLED()
       control = string.sub(payload,fnd[2]+1) -- Data is at end already.
-      if control == "ON"       then gpio.write(outpin,gpio.LOW);  blinkOFF() return end
-      if control == "OFF"      then gpio.write(outpin,gpio.HIGH); blinkOFF() return end
+      if control == "ON"       then gpio.write(outpin,gpio.HIGH);  blinkOFF() return end
+      if control == "OFF"      then gpio.write(outpin,gpio.LOW); blinkOFF() return end
       if control == "Blink"    then blkinkON() return end
       if control == "Blinkoff" then blinkOFF() return end
     end
